@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Website Rumah Cheesecake</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: "Poppins", sans-serif;
+      background-color: #e8ecf7;
+      color: #0b1a33;
+    }
+    html{
+        scroll-behavior: smooth;
+        scroll-padding-top: 70px;
+    }
+
+    section {
+        margin-top: 0;
+        padding-top: 120px;
+    }
+
+    /* Navigasi */
+    nav {
+      background-color: #0b1a33; /* dongker */
+      color: white;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 15px 40px;
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+
+    nav h1 {
+      font-size: 22px;
+      letter-spacing: 1px;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 20px;
+      margin: 0;
+      padding: 0;
+    }
+
+    nav ul li a {
+      color: white;
+      text-decoration: none;
+      font-weight: 600;
+      transition: 0.3s;
+    }
+
+    nav ul li a:hover {
+      color: #ffe599;
+    }
+
+    /* Header */
+    header {
+      background-image:linear-gradient(rgba(106, 175, 187, 0.85), rgba(33, 63, 90, 0.85)), url(https://media.cntravellerme.com/photos/668556c7c6355110d50543f1/16:9/w_2560%2Cc_limit/1222654885);
+      background-repeat: no-repeat;
+      background-size: cover;
+      height: 560px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      color: white;
+      text-align: center;
+      letter-spacing: 0.5px;
+    }
+
+    header h2 {
+      font-size: 40px;
+    }
+
+    header p{
+      font-size: 20px;
+      margin-top: 0.5px;
+    
+    }
+
+    /* Konten utama */
+    main {
+      max-width: 1900px;
+      margin: 30px auto;
+      padding: 0 20px;
+    }
+
+    section {
+      background: white;
+      padding: 25px;
+      margin-bottom: 25px;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    h3 {
+      color: #0b1a33;
+      margin-top: 0;
+    }
+
+    p {
+      line-height: 1.6;
+    }
+
+    .menu-item {
+      background: #dce1f1;
+      padding: 15px;
+      border-radius: 12px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.12);
+      text-align: center;
+    }
+
+    button {
+        background-color: #0b1a33;
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 6px;
+        margin-top: 15px;
+        cursor: pointer;
+        transition: var(--transition);
+    }
+
+    .menu {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 15px;
+      margin-top: 15px;
+    }
+
+    .menu img {
+      width: 100%;
+      border-radius: 10px;
+      transition: transform 0.3s;
+    }
+
+    .menu img:hover {
+      transform: scale(1.05);
+    }
+
+    /* Tabel Jadwal Cheesecake */
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 15px;
+    }
+
+    th, td {
+      border: 1px solid #ccc;
+      padding: 10px;
+      text-align: center;
+    }
+
+    th {
+      background-color: #0b1a33;
+      color: white;
+    }
+
+    #Testimoni {
+        display: block;
+        background-color: white;
+        border-radius: 10px;
+        text-align: left;
+    }
+
+    label {
+        display: block;
+        margin-top: 12px;
+        font-weight: 500;
+        color: var(--coffee-medium);
+    }
+
+    input{
+        width: 100%;
+        padding: 8px;
+        border: 1px solid #ccc;
+        border-radius: 6px;
+        margin-top: 5px;
+        font-size: 14px;
+    }
+
+
+    /* Footer */
+    footer {
+      background-color: #0b1a33;
+      color: white;
+      text-align: center;
+      padding: 15px;
+      font-size: 14px;
+      letter-spacing: 0.5px;
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <h1>Rumah Cheesecake</h1>
+    <ul>
+      <li><a href="#beranda">Beranda</a></li>
+      <li><a href="#tentang">Tentang</a></li>
+      <li><a href="#menu">Menu</a></li>
+      <li><a href="#jadwal">Jadwal Buka</a></li>
+    </ul>
+  </nav>
+
+  <header id="beranda">
+    <h2>Selamat Datang di Rumah Cheesecake!</h2>
+    <p>Dessert lezat yang berkualitas</p>
+  </header>
+
+  <main>
+    <section id="tentang">
+      <h3>Tentang Kami</h3>
+      <p>Rumah Cheesecake adalah toko dessert yang mengutamakan kualitas. Setiap cheesecake dibuat dari bahan pilihan mulai dari krim keju premium, susu segar, dan topping racikan sendiri. Kami percaya bahwa kue tidak hanya soal rasa, tapi pengalaman.
+Di sini, setiap varian dirancang untuk membuat pelanggan merasa senang di setiap gigitan.</p>
+    </section>
+
+<section id="menu">
+  <h3>Menu</h3>
+  <div class="menu">
+
+    <div class="menu-item">
+      <img src="https://tse1.mm.bing.net/th/id/OIP.WddH6orjlG8Qt--TV496NAHaHa?rs=1&pid=ImgDetMain&o=7&rm=3" alt="Cheesecake Clasic">
+      <button onclick="alert('Terimakasih atas pesanan anda.');">Pesan</button>
+    </div>
+
+    <div class="menu-item">
+      <img src="https://tse1.mm.bing.net/th/id/OIP.ff8db0R2tLf4J-u6ceNSvAHaHa?rs=1&pid=ImgDetMain&o=7&rm=3" alt="Cheesecake Strawberry">
+      <button onclick="alert('Terimakasih atas pesanan anda.');">Pesan</button>
+    </div>
+
+    <div class="menu-item">
+      <img src="https://www.dear-nesuto.com/cdn/shop/files/UjiMatchaRareCheesecake_16CM_1200x1200.jpg?v=1716797807" alt="Cheesecake Matcha">
+      <button onclick="alert('Terimakasih atas pesanan anda.');">Pesan</button>
+    </div>
+
+  </div>
+</section>
+
+<section id="jadwal">
+  <h3>Jadwal Buka Rumah Cheesecake</h3>
+  
+  <table>
+    <tr>
+      <th>Hari</th>
+      <th>Jam Buka</th>
+      <th>Jam Tutup</th>
+    </tr>
+
+    <tr>
+      <td>Senin</td>
+      <td>09.00</td>
+      <td>20.00</td>
+    </tr>
+
+    <tr>
+      <td>Selasa</td>
+      <td>09.00</td>
+      <td>20.00</td>
+    </tr>
+
+    <tr>
+      <td>Rabu</td>
+      <td>10.00</td>
+      <td>21.00</td>
+    </tr>
+
+    <tr>
+      <td>Kamis</td>
+      <td>10.00</td>
+      <td>21.00</td>
+    </tr>
+
+    <tr>
+      <td>Jumat</td>
+      <td>09.00</td>
+      <td>20.00</td>
+    </tr>
+
+    <tr>
+      <td>Sabtu</td>
+      <td>08.00</td>
+      <td>22.00</td>
+    </tr>
+
+    <tr>
+      <td>Minggu</td>
+      <td>08.00</td>
+      <td>22.00</td>
+    </tr>
+
+  </table>
+</section>
+
+<section id="Testimoni">
+      <h2 style="text-align: center;">Testimoni Costumer</h2>
+        <form id="Form">
+            <label for="namaKontak">Nama</label>
+            <input type="text" id="namaKontak" required>
+
+            <label>Testimoni Costumer</label>
+            <textarea id="pesanKontak" required style="width:100%;height:80px; resize: vertical;"></textarea>
+
+            <button type="submit" onclick="alert ('Terimakasih atas kritik dan sarannya!')">Kirim</button>
+            </form>
+    </section>
+
+  </main>
+
+  <footer>
+    © 2025 Website  Rumah Cheesecake | Dibuat oleh Damia
+  </footer>
+
+</body>
+</html>
